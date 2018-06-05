@@ -1,5 +1,5 @@
 node default {
 }
-node 'master.puppet.vm' {
+node 'sandboxcentos' {
   include role::master_server
 }
