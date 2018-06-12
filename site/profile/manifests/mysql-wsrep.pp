@@ -1,3 +1,3 @@
-class profile::mysql-wsrep {
+class profile::mysql-wsrep-cluster {
   include mysql-wsrep
 }
