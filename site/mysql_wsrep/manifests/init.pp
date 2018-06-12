@@ -1,4 +1,4 @@
-class mysql-wsrep {
+class mysql_wsrep {
   include profile::mysql_wsrep_yum_repo
   include profile::galera_yum_repo
   include profile::rsync
