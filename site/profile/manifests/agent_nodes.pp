@@ -11,8 +11,8 @@ class profile::agent_nodes {
 #    ensure => present,
 #    ip     => 192.168.50.73,
 #  }
-  host {'centospuppetslave':
-    ensure => present,
-    ip     => 192.168.50.27,
-  }
+#  host {'centospuppetslave':
+#    ensure => present,
+#    ip     => 192.168.50.27,
+#  }
 }
