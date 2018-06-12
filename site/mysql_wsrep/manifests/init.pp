@@ -21,7 +21,7 @@ class mysql_wsrep {
   
   file {'/etc/my.cnf':
     ensure => file,
-    source => 'puppet:///modules/mysql-wsrep/my.cnf',
+    source => 'puppet:///modules/mysql_wsrep/my.cnf',
     require => Package['mysql-wsrep-5.7'],
   }
   
