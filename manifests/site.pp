@@ -9,3 +9,6 @@ node /^centosmysql/ {
 node 'centospuppetslave' {
   include role::db_server
 }
+node 'centosmysql05' {
+  include role::db_server
+}
