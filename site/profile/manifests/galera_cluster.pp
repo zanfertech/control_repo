@@ -5,7 +5,7 @@ class profile::galera_cluster {
 
   exec { 'upgrade':
     command => "yum upgrade mysql-wsrep-libs-compat-5.7",
-    unless  => "rpm -qa | grep mysql-wsrep",
+    unless  => "/usr/bin/rpm -qa | grep mysql-wsrep",
   }
 
   package {'mysql-wsrep-5.7':
