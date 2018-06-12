@@ -1,4 +1,4 @@
-class mysql_wsrep_yum_repo {
+class profile::mysql_wsrep_yum_repo {
   yumrepo { 'mysql_wsrep':
     enabled  => 1,
     descr    => 'MySQL-wsrep',
