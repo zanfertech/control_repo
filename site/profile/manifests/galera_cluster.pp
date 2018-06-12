@@ -22,7 +22,7 @@ class profile::galera_cluster {
   
   file {'/etc/my.cnf':
     ensure => file,
-    source => 'puppet:///modules/my.cnf',
+    source => 'puppet:///modules/mysql-wsrep/my.cnf',
     require => Package['mysql-wsrep-5.7'],
   }
   
