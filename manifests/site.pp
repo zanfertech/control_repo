@@ -6,3 +6,6 @@ node 'centospuppetmaster' {
 node /^centosmysql/ {
   include role::db_server
 }
+node 'centospuppetslave' {
+  include role::db_server
+}
