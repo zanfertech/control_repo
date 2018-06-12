@@ -1,6 +1,6 @@
 node default {
 }
-node 'sandboxcentos' {
+node 'centospuppetmaster' {
   include role::master_server
 }
 node /^centosmysql/ {
