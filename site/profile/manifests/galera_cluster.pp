@@ -19,8 +19,7 @@ class profile::galera_cluster {
   }
   
   file {'/etc/my.cnf':
-    ensure => present,
-    type => 'file',
+    ensure => file,
     source => 'puppet:///modules/mysql-wsrep/my.cnf',
     require => Package['mysql-wsrep-5.7'],
   }
