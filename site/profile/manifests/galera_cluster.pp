@@ -25,7 +25,7 @@ class profile::galera_cluster {
     require => Package['mysql-wsrep-5.7'],
   }
   
-  service {'mysqld' {
+  service {'mysqld':
     ensure => 'running',
     enable => 'true',
     require => File['/etc/my.cnf'],
