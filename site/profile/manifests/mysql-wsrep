@@ -1,0 +1,19 @@
+class profile::mysql-wsrep {
+  package {'mysql-wsrep':
+    ensure => installed,
+  }
+  
+  file {'/etc/my.cnf':
+    ensure => present,
+    type => 'file',
+    requires => Package(mysql-wsrep),
+  }
+  
+  service {'mysqld' {
+    ensure => 'running',
+    enable => 'true',
+  }
+  
+  
+  
+  
