@@ -10,12 +10,12 @@ class profile::galera_cluster {
 
   package {'mysql-wsrep-5.7':
     ensure => installed,
-    require => Yumrepo['mysql_wsrep_yum_repo'],
+    require => Yumrepo['mysql-wsrep'],
   }
   
   package {'galera-3':
     ensure => installed,
-    require => Yumrepo['galera_yum_repo'],
+    require => Yumrepo['galera'],
   }
   
   file {'/etc/my.cnf':
