@@ -1,12 +1,16 @@
-class profile::mysql-wsrep {
-  package {'mysql-wsrep':
+class profile::galera_cluster {
+
+include profile::mysql_wsrep_yum_repo
+
+  package {'mysql-wsrep-5.7':
     ensure => installed,
+    require => Yumrepo['mysql_wsrep_yum_repo'],
   }
   
   file {'/etc/my.cnf':
     ensure => present,
     type => 'file',
-    requires => Package(mysql-wsrep),
+    require => Package['mysql-wsrep'],
   }
   
   service {'mysqld' {
