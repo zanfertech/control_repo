@@ -2,6 +2,7 @@ class profile::galera_cluster {
 
   include profile::mysql_wsrep_yum_repo
   include profile::galera_yum_repo
+  include profile::rsync
 
   exec { 'upgrade':
     command => "/usr/bin/yum upgrade -y mysql-wsrep-libs-compat-5.7",
