@@ -7,7 +7,7 @@ node /^centosmysql/ {
   include role::db_server
 }
 node 'centospuppetslave' {
-  include role::db_server
+  include role::slave_server
 }
 node 'centosmysql05' {
   include role::db_server
