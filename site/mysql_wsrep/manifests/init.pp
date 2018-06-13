@@ -22,7 +22,7 @@ class mysql_wsrep {
   file {'/etc/my.cnf':
     ensure => file,
     source => 'puppet:///modules/mysql_wsrep/my.cnf',
-    require => Package['mysql-wsrep-5.7'],
+    require => [ Package['mysql-wsrep-5.7'], Package['galera-3'] ],
   }
   
   service {'mysqld':
