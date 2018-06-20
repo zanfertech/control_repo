@@ -1,3 +1,3 @@
 class profile::slave_server {
-  include profile::slave_server
+  include slave_server
 }
