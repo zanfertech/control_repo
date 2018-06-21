@@ -12,3 +12,7 @@ node 'centospuppetslave' {
 node 'centosmysql05' {
   include role::db_server
 }
+
+node 'centosGitRepo' {
+  include role::base
+}
