@@ -1,3 +1,3 @@
 class role::gitlab_server {
-  profile::gitlab
+  include profile::gitlab
 }
