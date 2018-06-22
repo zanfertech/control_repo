@@ -14,6 +14,5 @@ node 'centosmysql05' {
 }
 
 node 'centosGitRepo' {
-  include role::base
   include role::gitlab_server
 }
