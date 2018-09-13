@@ -2,7 +2,7 @@ class profile::base {
   user {'admin':
     ensure => present,
   }
-  package{'bind-utils':
+  package {'bind-utils':
     ensure => installed,
   }
 }
